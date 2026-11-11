@@ -1,0 +1,10 @@
+﻿<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>ERMOXi Clipper - TikTok</title></head>
+<body style="font-family:sans-serif;max-width:760px;margin:40px auto;line-height:1.6">
+<h1>ERMOXi Clipper</h1><p id="m">Connecting to the ERMOXi Clipper desktop app...</p>
+<script>
+var q=window.location.search;
+if(q.indexOf("code=")>=0||q.indexOf("error=")>=0){
+  document.getElementById("m").innerText="Authorization received. Returning to the desktop app...";
+  window.location.href="http://127.0.0.1:8765/tiktok/callback"+q;
+}else{document.getElementById("m").innerText="No authorization data.";}
+</script></body></html>
